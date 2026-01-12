@@ -8,15 +8,12 @@ A simple and user-friendly **Student Income Tracker** built using
 - Track total income
 - Simple & clean UI
 - Beginner-friendly logic
-
+  
 ## 🛠 Tech Stack
 - HTML
 - CSS
 - JavaScript
-
-## 📸 Screenshots
-(Add screenshots here)
-
+  
 ## 🌐 Live Demo
 https://ujwalpanchal.github.io/SpendWise/
 
