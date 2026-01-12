@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up | SpendWise</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body background="login page pic.jpg" style="background-repeat:no-repeat;background-size:100% 100%">
+    <div class="container">
+        <div class="form-container">
+            <h2 id="form-title">Login</h2>
+
+            <!-- Toggle between login and signup -->
+            <div class="toggle-container">
+                <button id="login-btn" class="toggle-btn active">Login</button>
+                <button id="signup-btn" class="toggle-btn">Sign Up</button>
+            </div>
+
+            <!-- Login form -->
+            <form id="login-form" class="form" action="#">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="error-message" id="login-error"></p>
+            </form>
+
+            <!-- Sign up form -->
+            <form id="signup-form" class="form hidden" action="#">
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required placeholder="Create a password">
+                </div>
+                <div class="input-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" required placeholder="Confirm password">
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p class="error-message" id="signup-error"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="loginscript.js"></script>
+</body>
+</html>

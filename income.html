@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income and Want List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="incomestyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Spend<span>Wise</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="land.html">Dashboard</a></li>
+                <li><a href="index.html">Expenses</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="savings.html">Savings</a></li>
+                <li><a href="land.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="income-section">
+            <h2>Add Your Income</h2>
+            <form id="incomeForm">
+                <label for="incomeAmount">Income Amount:</label>
+                <input type="number" id="incomeAmount" name="incomeAmount" placeholder="Enter your income" required>
+
+                <label for="incomeDate">Date Received:</label>
+                <input type="date" id="incomeDate" name="incomeDate" required>
+
+                <button type="submit">Add Income</button>
+            </form>
+        </section>
+
+        <section class="want-list-section">
+            <h2>Your Want List</h2>
+            <form id="wantListForm">
+                <p>Select the items you want to save for:</p>
+                <div class="want-item">
+                    <input type="checkbox" id="laptop" name="wantList" value="Laptop">
+                    <label for="laptop">Laptop</label>
+                </div>
+                <div class="want-item">
+                    <input type="checkbox" id="mobile" name="wantList" value="Mobile">
+                    <label for="mobile">Mobile</label>
+                </div>
+                <div class="want-item">
+                    <input type="checkbox" id="medicine" name="wantList" value="Medicine">
+                    <label for="medicine">Medicine</label>
+                </div>
+                <div class="want-item">
+                    <input type="checkbox" id="vacation" name="wantList" value="Vacation">
+                    <label for="vacation">Vacation</label>
+                </div>
+                <div class="want-item">
+                    <input type="checkbox" id="books" name="wantList" value="Books">
+                    <label for="books">Books</label>
+                </div>
+
+                <button type="submit">Save Want List</button>
+            </form>
+        </section>
+
+        <!-- Next Button -->
+        <div class="next-section">
+            <a href="index.html" id="nextButton" class="next-btn">Next</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SpendWise. All Rights Reserved.</p>
+    </footer>
+
+    <script src="incomescript.js"></script>
+</body>
+</html>
